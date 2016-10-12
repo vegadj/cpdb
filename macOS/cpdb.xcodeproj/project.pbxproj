@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		768FDD321D9C50FD009324D7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 768FDD311D9C50FD009324D7 /* main.c */; };
+		76F32D1A1DAE82E900C311F3 /* cpdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D171DAE82E900C311F3 /* cpdb.c */; };
+		76F32D1B1DAE82E900C311F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D181DAE82E900C311F3 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		768FDD2E1D9C50FD009324D7 /* cpdb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpdb; sourceTree = BUILT_PRODUCTS_DIR; };
-		768FDD311D9C50FD009324D7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		76F32D171DAE82E900C311F3 /* cpdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpdb.c; path = ../src/cpdb.c; sourceTree = "<group>"; };
+		76F32D181DAE82E900C311F3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../src/main.c; sourceTree = "<group>"; };
+		76F32D191DAE82E900C311F3 /* cpdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpdb.h; path = ../src/cpdb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +44,9 @@
 		768FDD251D9C50FD009324D7 = {
 			isa = PBXGroup;
 			children = (
-				768FDD301D9C50FD009324D7 /* cpdb */,
+				76F32D171DAE82E900C311F3 /* cpdb.c */,
+				76F32D181DAE82E900C311F3 /* main.c */,
+				76F32D191DAE82E900C311F3 /* cpdb.h */,
 				768FDD2F1D9C50FD009324D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +57,6 @@
 				768FDD2E1D9C50FD009324D7 /* cpdb */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		768FDD301D9C50FD009324D7 /* cpdb */ = {
-			isa = PBXGroup;
-			children = (
-				768FDD311D9C50FD009324D7 /* main.c */,
-			);
-			path = cpdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +116,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768FDD321D9C50FD009324D7 /* main.c in Sources */,
+				76F32D1B1DAE82E900C311F3 /* main.c in Sources */,
+				76F32D1A1DAE82E900C311F3 /* cpdb.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +244,7 @@
 				768FDD371D9C50FD009324D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,6 +12,7 @@ test.x: $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $(OBJ)
 
 $(OBJ): $(OBJDIR)/%.o : $(SRCDIR)/%.c
+	mkdir -p obj
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

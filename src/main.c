@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
 	
 	pdb *P;
 	P = initPDB();
-	parsePDB ("../test/1cqu.pdb", P, "");
+	parsePDB ("./test/1cqu.pdb", P, "");
 	printPDB (P);
 	freePDB (P);
     return 0;
