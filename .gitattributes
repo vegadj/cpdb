@@ -1,1 +1,1 @@
-*.h ident
+*.h filter=VERSION
