@@ -1,0 +1,11 @@
+*.o
+*.a
+*.so
+
+obj/
+build/
+
+.DS_Store
+.Trash
+.Spotlight-V100
+Thumbs.db
