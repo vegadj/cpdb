@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-#define VERSION_CPDB $Id$
+#define VERSION_CPDB "$Id$"
 
 typedef struct pdb pdb;
 typedef struct chain chain;
