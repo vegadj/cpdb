@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76424B861DB8FBD00001EAC0 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 76424B851DB8FBD00001EAC0 /* utils.c */; };
+		765BE4521DC964DE00F8FBF4 /* cpdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D171DAE82E900C311F3 /* cpdb.c */; };
+		765BE4531DC964E400F8FBF4 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 76424B851DB8FBD00001EAC0 /* utils.c */; };
+		765BE45F1DC9656400F8FBF4 /* cpdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F32D191DAE82E900C311F3 /* cpdb.h */; };
 		76F32D1A1DAE82E900C311F3 /* cpdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D171DAE82E900C311F3 /* cpdb.c */; };
 		76F32D1B1DAE82E900C311F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D181DAE82E900C311F3 /* main.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		76424B851DB8FBD00001EAC0 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utils.c; path = ../src/utils.c; sourceTree = "<group>"; };
+		765BE44E1DC964C700F8FBF4 /* liblibcpdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibcpdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		768FDD2E1D9C50FD009324D7 /* cpdb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpdb; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F32D171DAE82E900C311F3 /* cpdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpdb.c; path = ../src/cpdb.c; sourceTree = "<group>"; };
 		76F32D181DAE82E900C311F3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../src/main.c; sourceTree = "<group>"; };
@@ -31,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		765BE44B1DC964C700F8FBF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		768FDD2B1D9C50FD009324D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +60,7 @@
 				76F32D171DAE82E900C311F3 /* cpdb.c */,
 				76F32D181DAE82E900C311F3 /* main.c */,
 				76F32D191DAE82E900C311F3 /* cpdb.h */,
+				76424B851DB8FBD00001EAC0 /* utils.c */,
 				768FDD2F1D9C50FD009324D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +69,42 @@
 			isa = PBXGroup;
 			children = (
 				768FDD2E1D9C50FD009324D7 /* cpdb */,
+				765BE44E1DC964C700F8FBF4 /* liblibcpdb.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		765BE44C1DC964C700F8FBF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765BE45F1DC9656400F8FBF4 /* cpdb.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		765BE44D1DC964C700F8FBF4 /* libcpdb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 765BE4511DC964C700F8FBF4 /* Build configuration list for PBXNativeTarget "libcpdb" */;
+			buildPhases = (
+				765BE44A1DC964C700F8FBF4 /* Sources */,
+				765BE44B1DC964C700F8FBF4 /* Frameworks */,
+				765BE44C1DC964C700F8FBF4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcpdb;
+			productName = libcpdb;
+			productReference = 765BE44E1DC964C700F8FBF4 /* liblibcpdb.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		768FDD2D1D9C50FD009324D7 /* cpdb */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 768FDD351D9C50FD009324D7 /* Build configuration list for PBXNativeTarget "cpdb" */;
@@ -88,6 +131,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Gokhan SELAMET";
 				TargetAttributes = {
+					765BE44D1DC964C700F8FBF4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					768FDD2D1D9C50FD009324D7 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -107,15 +154,26 @@
 			projectRoot = "";
 			targets = (
 				768FDD2D1D9C50FD009324D7 /* cpdb */,
+				765BE44D1DC964C700F8FBF4 /* libcpdb */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		765BE44A1DC964C700F8FBF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765BE4531DC964E400F8FBF4 /* utils.c in Sources */,
+				765BE4521DC964DE00F8FBF4 /* cpdb.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		768FDD2A1D9C50FD009324D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76424B861DB8FBD00001EAC0 /* utils.c in Sources */,
 				76F32D1B1DAE82E900C311F3 /* main.c in Sources */,
 				76F32D1A1DAE82E900C311F3 /* cpdb.c in Sources */,
 			);
@@ -124,6 +182,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		765BE44F1DC964C700F8FBF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		765BE4501DC964C700F8FBF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		768FDD331D9C50FD009324D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,6 +302,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		765BE4511DC964C700F8FBF4 /* Build configuration list for PBXNativeTarget "libcpdb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765BE44F1DC964C700F8FBF4 /* Debug */,
+				765BE4501DC964C700F8FBF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		768FDD291D9C50FD009324D7 /* Build configuration list for PBXProject "cpdb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

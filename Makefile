@@ -17,3 +17,9 @@ $(OBJ): $(OBJDIR)/%.o : $(SRCDIR)/%.c
 
 clean:
 	rm $(OBJ) test.x
+
+_temp: 
+	gcc -c src/cpdb.c src/utils.c
+	ar rcs ~/Dropbox/tmp/brewer/macOS/libcpdb.a cpdb.o utils.o
+	cp src/cpdb.h ~/Dropbox/tmp/brewer/macOS/
+
