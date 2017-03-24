@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76424B861DB8FBD00001EAC0 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 76424B851DB8FBD00001EAC0 /* utils.c */; };
-		765BE4521DC964DE00F8FBF4 /* cpdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D171DAE82E900C311F3 /* cpdb.c */; };
-		765BE4531DC964E400F8FBF4 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 76424B851DB8FBD00001EAC0 /* utils.c */; };
-		765BE45F1DC9656400F8FBF4 /* cpdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F32D191DAE82E900C311F3 /* cpdb.h */; };
+		765BE48D1DC9721300F8FBF4 /* cpdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D171DAE82E900C311F3 /* cpdb.c */; };
+		765BE48E1DC9721800F8FBF4 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 76424B851DB8FBD00001EAC0 /* utils.c */; };
+		765BE48F1DC9722000F8FBF4 /* cpdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F32D191DAE82E900C311F3 /* cpdb.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76F32D1A1DAE82E900C311F3 /* cpdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D171DAE82E900C311F3 /* cpdb.c */; };
 		76F32D1B1DAE82E900C311F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F32D181DAE82E900C311F3 /* main.c */; };
 /* End PBXBuildFile section */
@@ -29,15 +29,15 @@
 
 /* Begin PBXFileReference section */
 		76424B851DB8FBD00001EAC0 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utils.c; path = ../src/utils.c; sourceTree = "<group>"; };
-		765BE44E1DC964C700F8FBF4 /* liblibcpdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibcpdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		768FDD2E1D9C50FD009324D7 /* cpdb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpdb; sourceTree = BUILT_PRODUCTS_DIR; };
+		765BE4891DC9720000F8FBF4 /* libcpdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcpdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		768FDD2E1D9C50FD009324D7 /* pdbparser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pdbparser; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F32D171DAE82E900C311F3 /* cpdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpdb.c; path = ../src/cpdb.c; sourceTree = "<group>"; };
 		76F32D181DAE82E900C311F3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../src/main.c; sourceTree = "<group>"; };
 		76F32D191DAE82E900C311F3 /* cpdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpdb.h; path = ../src/cpdb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		765BE44B1DC964C700F8FBF4 /* Frameworks */ = {
+		765BE4861DC9720000F8FBF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,8 +68,8 @@
 		768FDD2F1D9C50FD009324D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				768FDD2E1D9C50FD009324D7 /* cpdb */,
-				765BE44E1DC964C700F8FBF4 /* liblibcpdb.a */,
+				768FDD2E1D9C50FD009324D7 /* pdbparser */,
+				765BE4891DC9720000F8FBF4 /* libcpdb.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,37 +77,37 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		765BE44C1DC964C700F8FBF4 /* Headers */ = {
+		765BE4871DC9720000F8FBF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765BE45F1DC9656400F8FBF4 /* cpdb.h in Headers */,
+				765BE48F1DC9722000F8FBF4 /* cpdb.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		765BE44D1DC964C700F8FBF4 /* libcpdb */ = {
+		765BE4881DC9720000F8FBF4 /* cpdb */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 765BE4511DC964C700F8FBF4 /* Build configuration list for PBXNativeTarget "libcpdb" */;
+			buildConfigurationList = 765BE48A1DC9720000F8FBF4 /* Build configuration list for PBXNativeTarget "cpdb" */;
 			buildPhases = (
-				765BE44A1DC964C700F8FBF4 /* Sources */,
-				765BE44B1DC964C700F8FBF4 /* Frameworks */,
-				765BE44C1DC964C700F8FBF4 /* Headers */,
+				765BE4851DC9720000F8FBF4 /* Sources */,
+				765BE4861DC9720000F8FBF4 /* Frameworks */,
+				765BE4871DC9720000F8FBF4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = libcpdb;
-			productName = libcpdb;
-			productReference = 765BE44E1DC964C700F8FBF4 /* liblibcpdb.a */;
+			name = cpdb;
+			productName = cpdb;
+			productReference = 765BE4891DC9720000F8FBF4 /* libcpdb.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		768FDD2D1D9C50FD009324D7 /* cpdb */ = {
+		768FDD2D1D9C50FD009324D7 /* pdbparser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 768FDD351D9C50FD009324D7 /* Build configuration list for PBXNativeTarget "cpdb" */;
+			buildConfigurationList = 768FDD351D9C50FD009324D7 /* Build configuration list for PBXNativeTarget "pdbparser" */;
 			buildPhases = (
 				768FDD2A1D9C50FD009324D7 /* Sources */,
 				768FDD2B1D9C50FD009324D7 /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = cpdb;
+			name = pdbparser;
 			productName = cpdb;
-			productReference = 768FDD2E1D9C50FD009324D7 /* cpdb */;
+			productReference = 768FDD2E1D9C50FD009324D7 /* pdbparser */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -128,10 +128,10 @@
 		768FDD261D9C50FD009324D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Gokhan SELAMET";
 				TargetAttributes = {
-					765BE44D1DC964C700F8FBF4 = {
+					765BE4881DC9720000F8FBF4 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -153,19 +153,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				768FDD2D1D9C50FD009324D7 /* cpdb */,
-				765BE44D1DC964C700F8FBF4 /* libcpdb */,
+				768FDD2D1D9C50FD009324D7 /* pdbparser */,
+				765BE4881DC9720000F8FBF4 /* cpdb */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		765BE44A1DC964C700F8FBF4 /* Sources */ = {
+		765BE4851DC9720000F8FBF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765BE4531DC964E400F8FBF4 /* utils.c in Sources */,
-				765BE4521DC964DE00F8FBF4 /* cpdb.c in Sources */,
+				765BE48E1DC9721800F8FBF4 /* utils.c in Sources */,
+				765BE48D1DC9721300F8FBF4 /* cpdb.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +182,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		765BE44F1DC964C700F8FBF4 /* Debug */ = {
+		765BE48B1DC9720000F8FBF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
@@ -190,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		765BE4501DC964C700F8FBF4 /* Release */ = {
+		765BE48C1DC9720000F8FBF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
@@ -216,6 +216,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,6 +264,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -302,11 +304,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		765BE4511DC964C700F8FBF4 /* Build configuration list for PBXNativeTarget "libcpdb" */ = {
+		765BE48A1DC9720000F8FBF4 /* Build configuration list for PBXNativeTarget "cpdb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				765BE44F1DC964C700F8FBF4 /* Debug */,
-				765BE4501DC964C700F8FBF4 /* Release */,
+				765BE48B1DC9720000F8FBF4 /* Debug */,
+				765BE48C1DC9720000F8FBF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
@@ -319,7 +321,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		768FDD351D9C50FD009324D7 /* Build configuration list for PBXNativeTarget "cpdb" */ = {
+		768FDD351D9C50FD009324D7 /* Build configuration list for PBXNativeTarget "pdbparser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				768FDD361D9C50FD009324D7 /* Debug */,

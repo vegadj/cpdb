@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "768FDD2D1D9C50FD009324D7"
-               BuildableName = "cpdb"
-               BlueprintName = "cpdb"
+               BuildableName = "pdbparser"
+               BlueprintName = "pdbparser"
                ReferencedContainer = "container:cpdb.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "768FDD2D1D9C50FD009324D7"
-            BuildableName = "cpdb"
-            BlueprintName = "cpdb"
+            BuildableName = "pdbparser"
+            BlueprintName = "pdbparser"
             ReferencedContainer = "container:cpdb.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "768FDD2D1D9C50FD009324D7"
-            BuildableName = "cpdb"
-            BlueprintName = "cpdb"
+            BuildableName = "pdbparser"
+            BlueprintName = "pdbparser"
             ReferencedContainer = "container:cpdb.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "768FDD2D1D9C50FD009324D7"
-            BuildableName = "cpdb"
-            BlueprintName = "cpdb"
+            BuildableName = "pdbparser"
+            BlueprintName = "pdbparser"
             ReferencedContainer = "container:cpdb.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>cpdb 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>cpdb copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>cpdb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -14,10 +24,30 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>765BE44D1DC964C700F8FBF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>765BE4751DC9713B00F8FBF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>765BE47A1DC971E900F8FBF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>765BE4881DC9720000F8FBF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
