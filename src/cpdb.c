@@ -353,7 +353,9 @@ void updateAtomPointers (residue *R) {
 }
 
 // TODO
+/*
 void removeResidue();
 void removeAtom();
 void insertAtom();
 void insertResidue();
+ */

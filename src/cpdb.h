@@ -21,7 +21,7 @@ typedef struct residue residue;
 typedef struct atom atom;
 typedef struct v3 v3;
 
-pdb* initPDB();
+pdb* initPDB(void);
 int parsePDB (char *pdbFilePath, pdb *P , char *options);
 /*
  by default, parsePDB function do not parse 'Hydrogene' atoms and 'Alternate Location' atoms.
