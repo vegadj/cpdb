@@ -221,13 +221,13 @@ void getAtomElement (const char *line, char *out) {
 }
 
 void getAtomId (const char *line, int *atomId) {
-    char _temp[5];
+    char _temp[6]={0};
     extractStr(_temp, line, 6, 10);
     *atomId = atoi(_temp);
 }
 
 void getResidueId (const char *line, int *residueId) {
-    char _temp[5];
+    char _temp[5]={0};
     extractStr(_temp, line, 22, 25);
     *residueId = atoi(_temp);
 }
@@ -241,13 +241,13 @@ void getChainId(const char *line, char *chainId) {
 }
 
 void getOccupancy (const char *line, float *occupancy) {
-    char _temp[5];
+    char _temp[7]={0};
     extractStr(_temp, line, 54, 59);
     *occupancy = atof(_temp);
 }
 
 void getTempFactor (const char *line, float *tempFactor){
-    char _temp[5];
+    char _temp[7]={0};
     extractStr(_temp, line, 60, 65);
     *tempFactor = atof(_temp);
 }
